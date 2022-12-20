@@ -18,9 +18,9 @@ public class PasswordCreater {
         System.out.println("Please enter your new password.");
         String newPassword = scanner.nextLine();
         passwordValidator.setNewPassword(newPassword);
-        passwordValidator.changePassword();
+        PasswordValidator.changePassword();
+        String errorMessage = PasswordValidator.errorMessage;
+        System.out.println(errorMessage);
     }
 
 }
-
-// asd
