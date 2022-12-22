@@ -1,15 +1,15 @@
 package chapter9;
 
 public class BirthdayCake extends Cake{
-    public static int candles;
-    BirthdayCake(String flavor) {
+    private  int candles;
+    public BirthdayCake(String flavor) {
         super(flavor);
     }
-    public static int getCandles() {
+    public int getCandles() {
         return candles;
     }
-    public static void setCandles(int candles) {
-        BirthdayCake.candles = candles;
+    public void setCandles(int candles) {
+        candles = this.candles;
     }
 
 }

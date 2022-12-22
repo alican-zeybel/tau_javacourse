@@ -1,22 +1,22 @@
 package chapter9;
 
 public class Cake {
-    public static String flavor;
-    public static double price;
-    Cake(String flavor){
-        flavor = this.flavor;
+    private String flavor;
+    private double price;
+    public Cake(String flavor){
+        this.flavor = flavor;
     }
-    public static String getFlavor() {
+    public String getFlavor() {
         return flavor;
     }
-    public static void setFlavor() {
-        Cake.flavor = flavor;
+    public void setFlavor(String flavor) {
+        this.flavor = flavor;
     }
-    public static double getPrice() {
+    public double getPrice() {
         return price;
     }
-    public static void setPrice(double price) {
-        Cake.price = price;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
 
